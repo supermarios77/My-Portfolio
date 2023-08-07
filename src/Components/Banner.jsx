@@ -1,9 +1,25 @@
 import React from "react";
 import Lottie from "lottie-react";
 import animationData from "../assets/astriya.json";
+import Typed from "typed.js";
+import { useEffect } from "react";
 
 function Banner() {
-  const randomSkill = "Web Developer";
+
+  const el = React.useRef(null);
+
+  React.useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ['Fullstack Web Developer', ' Python Programmer'],
+      typeSpeed: 150,
+      backSpeed: 150,
+      loop: true,
+    });
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
 
   return (
     <div className="Banner">
@@ -13,7 +29,9 @@ function Banner() {
       <div className="section-left">
         <div className="banner-container">
           <p>Welcome To My Portfolio</p>
-          <h1>I'm Mariya Baig A {randomSkill}</h1>
+          <h1>I'm Mariya Baig A {" "}
+          <span ref={el} />
+          </h1>
           <h5>
             There is no strife, no prejudice, no national conflict in outer
             space as yet. Its hazards are hostile to us all. Its conquest
