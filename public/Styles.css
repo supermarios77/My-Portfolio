@@ -1,0 +1,90 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  background: url(images/webbg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  padding-bottom: 6.74rem;
+  box-sizing: inherit;
+  font-family: "Poppins";
+}
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+/* Header */
+
+header {
+  display: flex;
+  width: 100%;
+  height: 75px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background: transparent;
+  margin-top: 40px;
+}
+
+header p {
+  margin-top: 3dvh;
+  font-size: 50px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  color: white;
+}
+
+nav li {
+  display: inline-block;
+  list-style: none;
+  padding: 0px 20px;
+}
+nav li, a {
+  text-decoration: none;
+  font-family: 'Roboto';
+  font-size: 20px;
+  margin-top: 20px;
+  color: white;
+}
+
+.cta {
+  background: transparent;
+  border: 1px solid white;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.cta:hover a {
+  transition: 0.4s ease-in;
+  color: rgb(0, 0, 0);
+}
+
+.cta:hover {
+  transition: 0.4s ease-in;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+nav li:hover a {
+  transition: 0.4s ease-in;
+  font-size: 21px;
+  color: rgb(0, 0, 0);
+}
+
+@media (min-width: 300px) and (max-width: 700px) {
+  nav li {
+    visibility: hidden;
+  }
+
+}
