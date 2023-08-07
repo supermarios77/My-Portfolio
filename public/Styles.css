@@ -4,9 +4,8 @@ html {
 }
 
 body {
-  position: relative;
   margin: 0;
-  background: url(images/webbg.jpg) no-repeat center center fixed; 
+  background: url(images/bgspace.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -15,6 +14,8 @@ body {
   padding-bottom: 6.74rem;
   box-sizing: inherit;
   font-family: "Poppins";
+  max-width: 100%;
+  height: 200vh;
 }
 
 *{
@@ -61,30 +62,66 @@ nav li, a {
 
 .cta {
   background: transparent;
-  border: 1px solid white;
+  border: 1px solid rgb(255, 255, 255);
   padding: 15px;
   margin-top: 30px;
 }
 
 .cta:hover a {
   transition: 0.4s ease-in;
-  color: rgb(0, 0, 0);
+  color: rgb(95,43,67);
 }
 
 .cta:hover {
   transition: 0.4s ease-in;
-  border: 2px solid rgb(0, 0, 0);
+  border: 2px solid  rgb(95,43,67);
 }
 
 nav li:hover a {
   transition: 0.4s ease-in;
   font-size: 21px;
-  color: rgb(0, 0, 0);
+  color: rgb(207, 124, 10);
 }
+
+/* Media Query */
 
 @media (min-width: 300px) and (max-width: 700px) {
   nav li {
     visibility: hidden;
   }
 
+}
+
+/* Banner */
+
+.Banner {
+  margin-top: 60px;
+  margin-left: 60px;
+  margin-right: 60px;
+  font-family: 'Poppins';
+  color: white;
+  cursor: pointer;
+}
+
+.Astronaut {
+  float: right;
+}
+
+.Banner .section-left p {
+  background: -webkit-linear-gradient(45deg, #a86f8d68, #9a218690, #1413349c );
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  margin-top: 90px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.Banner .section-left h1 {
+  font-size: 50px;
+}
+
+.Banner .section-left h5 {
+  margin-top: 10px;
+  font-size: 15px;
 }
