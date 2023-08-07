@@ -12,6 +12,7 @@
     "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
+    "react-multi-carousel": "^2.8.4",
     "react-on-screen": "^2.1.1",
     "react-scripts": "5.0.1",
     "set-interval": "^2.1.3",

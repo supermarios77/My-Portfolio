@@ -2,7 +2,6 @@ import React from "react";
 import Lottie from "lottie-react";
 import animationData from "../assets/astriya.json";
 import Typed from "typed.js";
-import { useEffect } from "react";
 
 function Banner() {
 
@@ -41,6 +40,7 @@ function Banner() {
             mountain? Why, 35 years ago, fly the Atlantic? Why does Rice play
             Texas?
           </h5>
+          <h4>Hire Me <a href="#Bottom"><i class="fa-solid fa-arrow-right"></i></a></h4>
         </div>
       </div>
     </div>

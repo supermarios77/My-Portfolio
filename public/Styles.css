@@ -84,11 +84,20 @@ nav li:hover a {
   color: rgb(207, 124, 10);
 }
 
+nav li a i {
+  font-size: 30px;
+}
+
 /* Media Query */
 
 @media (min-width: 300px) and (max-width: 700px) {
   nav li {
     visibility: hidden;
+  }
+
+  nav li a i {
+    visibility: initial;
+    margin-bottom: 120px;
   }
 
 }
@@ -97,9 +106,10 @@ nav li:hover a {
 
 .Banner {
   display: flex;
+  justify-content: center;
   margin-top: 60px;
-  margin-left: 80px;
-  margin-right: 80px;
+  margin-left: 100px;
+  margin-right: 100px;
   font-family: 'Poppins';
   color: white;
   cursor: pointer;
@@ -127,4 +137,64 @@ nav li:hover a {
 .Banner .section-left h5 {
   margin-top: 10px;
   font-size: 15px;
+}
+
+.Banner .section-left h4 {
+  margin-top: 20px;
+  color: rgb(233, 228, 233);
+  font-weight: 600;
+}
+
+.Banner .section-left h4 a i {
+  margin-left: 10px;
+}
+
+/* Skills */
+
+.skill {
+  margin-top: 200px;
+  padding: 0 0 50px 0;
+  position: relative;
+  margin-right: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.skill-bx {
+  background: rgb(6,8,26);
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -60px;
+}
+.skill h2 {
+	font-size: 45px;
+	font-weight: 700;
+  color: white;
+}
+.skill p {
+    color: #e6e2e2;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px 0 75px 0;
+}
+.skill-slider {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+.skill-slider .item img {
+  width: 50%;
+  margin: 0 auto 15px auto;
+}
+.background-image-left {
+  top: 28%;
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  z-index: -4;
+}
+
+.skill-slider h5 {
+  color: white;
 }
