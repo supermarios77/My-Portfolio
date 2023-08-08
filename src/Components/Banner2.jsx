@@ -1,6 +1,6 @@
 import React from "react";
 import Lottie from "lottie-react";
-import animationData from "../assets/astriya.json";
+import animationData from "../assets/Orange.json";
 import Typed from "typed.js";
 
 function Banner() {

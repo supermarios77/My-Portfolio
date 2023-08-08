@@ -1,0 +1,276 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    background: linear-gradient(45deg, rgb(50, 157, 161) 50%, rgb(233, 187, 34) 50%) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100%;
+    padding-bottom: 6.74rem;
+    box-sizing: inherit;
+    font-family: "Poppins";
+    max-width: 100%;
+    height: 200vh;
+  }
+  
+  * {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+  }
+  
+  /* Header */
+  
+  header {
+    display: flex;
+    width: 100%;
+    height: 75px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background: transparent;
+    margin-top: 40px;
+  }
+  
+  header p {
+    margin-top: 3dvh;
+    font-size: 50px;
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  nav li {
+    display: inline-block;
+    list-style: none;
+    padding: 0px 20px;
+  }
+  nav li,
+  a {
+    text-decoration: none;
+    font-family: "Roboto";
+    font-size: 20px;
+    margin-top: 20px;
+    color: white;
+  }
+  
+  .cta {
+    background: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 15px;
+    margin-top: 30px;
+    margin-right: 70px;
+  }
+  
+  .cta:hover a {
+    transition: 0.4s ease-in;
+    color: rgb(95, 43, 67);
+  }
+  
+  .cta:hover {
+    transition: 0.4s ease-in;
+    border: 2px solid rgb(95, 43, 67);
+    background-color: rgb(27, 122, 146);
+  }
+  
+  nav li:hover a {
+    transition: 0.4s ease-in;
+    font-size: 21px;
+    color: rgb(207, 124, 10);
+  }
+  
+  nav li a i {
+    font-size: 30px;
+  }
+  
+  /* Media Query */
+  
+  @media (min-width: 300px) and (max-width: 700px) {
+    nav li {
+      visibility: hidden;
+    }
+  
+    nav li a i {
+      visibility: initial;
+      margin-bottom: 120px;
+    }
+  }
+  
+  /* Banner */
+  
+  .Banner {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: "Poppins";
+    color: white;
+    cursor: pointer;
+  }
+  
+  .Astronaut {
+    float: right;
+  }
+  
+  .Banner .section-left p {
+    background: -webkit-linear-gradient(45deg, #db882968, #ca760f90, #e3500c9c);
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    margin-top: 90px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: 0.9px solid white;
+  }
+  
+  .Banner .section-left h1 {
+    font-size: 50px;
+  }
+  
+  .Banner .section-left h5 {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  
+  .Banner .section-left h4 {
+    margin-top: 20px;
+    color: rgb(233, 228, 233);
+    font-weight: 600;
+  }
+  
+  .Banner .section-left h4 a i {
+    margin-left: 10px;
+  }
+  
+  /* Skills */
+  
+  .skill {
+    margin-top: 200px;
+    padding: 0 0 50px 0;
+    position: relative;
+    margin-right: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  .skill-bx {
+    background:  -webkit-linear-gradient(45deg, #d29d0968, #c46b0b90, #de550b9c);;
+    border-radius: 64px;
+    text-align: center;
+    padding: 60px 50px;
+    margin-top: -60px;
+    border: 0.9px solid white;
+  }
+  .skill h2 {
+    font-size: 45px;
+    font-weight: 700;
+    color: white;
+  }
+  .skill p {
+    color: #e6e2e2;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px 0 75px 0;
+  }
+  .skill-slider {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .skill-slider .item img {
+    width: 50%;
+    margin: 0 auto 15px auto;
+  }
+  .background-image-left {
+    top: 28%;
+    position: absolute;
+    bottom: 0;
+    width: 40%;
+    z-index: -4;
+  }
+  
+  .skill-slider h5 {
+    color: white;
+  }
+  
+  .Highlight {
+    color: #c2c2c2;
+  }
+  
+  /*  media query for smaller screens */
+  @media (max-width: 767px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+      padding: 15px;
+    }
+  
+    header p {
+      font-size: 30px;
+      margin-top: 20px;
+      text-align: center;
+    }
+  
+    nav li {
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+      padding: 10px 0;
+    }
+  
+    .cta {
+      position: absolute;
+      bottom: 70%;
+      right: 9%;
+    }
+  
+    .Banner {
+      flex-direction: column;
+      align-items: center;
+      margin: 40px 20px;
+    }
+  
+    .Astronaut {
+      float: none;
+      margin-top: 50px;
+    }
+  
+    .Banner .section-left p {
+      margin-top: 40px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  
+    .Banner .section-left h1 {
+      font-size: 30px;
+      text-align: center;
+    }
+  
+    .Banner .section-left h5 {
+      margin-top: 5px;
+      font-size: 13px;
+      text-align: center;
+    }
+  
+    .skill {
+      margin-top: 200px;
+    }
+  
+    nav li a i {
+      visibility: visible;
+      display: inline-block;
+      font-size: 35px;
+      margin-left: 10px;
+      position: absolute;
+      bottom: 55%;
+      right: 65%;
+    }
+  }
