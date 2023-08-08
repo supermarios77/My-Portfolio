@@ -29,7 +29,7 @@ function Banner() {
         <div className="banner-container">
           <p>Welcome To My Portfolio</p>
           <h1>I'm Mariya Baig A {" "}
-          <span ref={el} />
+          <span className="Highlight" ref={el} />
           </h1>
           <h5>
             There is no strife, no prejudice, no national conflict in outer

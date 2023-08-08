@@ -5,7 +5,7 @@ html {
 
 body {
   margin: 0;
-  background: url(images/bgspace.jpg) no-repeat center center fixed; 
+  background: url(images/bg2.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -18,10 +18,10 @@ body {
   height: 200vh;
 }
 
-*{
+* {
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
 /* Header */
@@ -40,7 +40,7 @@ header {
 header p {
   margin-top: 3dvh;
   font-size: 50px;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: bold;
   letter-spacing: 0.5px;
   cursor: pointer;
@@ -52,9 +52,10 @@ nav li {
   list-style: none;
   padding: 0px 20px;
 }
-nav li, a {
+nav li,
+a {
   text-decoration: none;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 20px;
   margin-top: 20px;
   color: white;
@@ -70,12 +71,13 @@ nav li, a {
 
 .cta:hover a {
   transition: 0.4s ease-in;
-  color: rgb(95,43,67);
+  color: rgb(95, 43, 67);
 }
 
 .cta:hover {
   transition: 0.4s ease-in;
-  border: 2px solid  rgb(95,43,67);
+  border: 2px solid rgb(95, 43, 67);
+  background-color: rgb(27, 122, 146);
 }
 
 nav li:hover a {
@@ -99,7 +101,6 @@ nav li a i {
     visibility: initial;
     margin-bottom: 120px;
   }
-
 }
 
 /* Banner */
@@ -110,7 +111,7 @@ nav li a i {
   margin-top: 60px;
   margin-left: 100px;
   margin-right: 100px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   color: white;
   cursor: pointer;
 }
@@ -120,14 +121,14 @@ nav li a i {
 }
 
 .Banner .section-left p {
-  background: -webkit-linear-gradient(45deg, #a86f8d68, #9a218690, #1413349c );
+  background: -webkit-linear-gradient(45deg, #a86f8d68, #9a218690, #1413349c);
   padding: 10px;
   width: 300px;
   border-radius: 5px;
   margin-top: 90px;
   margin-bottom: 20px;
   cursor: pointer;
-  border: 0.9px solid  white;
+  border: 0.9px solid white;
 }
 
 .Banner .section-left h1 {
@@ -160,23 +161,24 @@ nav li a i {
   cursor: pointer;
 }
 .skill-bx {
-  background: rgb(6,8,26);
+  background:  -webkit-linear-gradient(45deg, #a86f8d68, #9a218690, #1413349c);;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
   margin-top: -60px;
+  border: 0.9px solid white;
 }
 .skill h2 {
-	font-size: 45px;
-	font-weight: 700;
+  font-size: 45px;
+  font-weight: 700;
   color: white;
 }
 .skill p {
-    color: #e6e2e2;
-    font-size: 18px;
-    letter-spacing: 0.8px;
-    line-height: 1.5em;
-    margin: 14px 0 75px 0;
+  color: #e6e2e2;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px 0 75px 0;
 }
 .skill-slider {
   width: 80%;
@@ -197,4 +199,78 @@ nav li a i {
 
 .skill-slider h5 {
   color: white;
+}
+
+.Highlight {
+  color: #c2c2c2;
+}
+
+/*  media query for smaller screens */
+@media (max-width: 767px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  header p {
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  nav li {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px 0;
+  }
+
+  .cta {
+    position: absolute;
+    bottom: 70%;
+    right: 9%;
+  }
+
+  .Banner {
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 20px;
+  }
+
+  .Astronaut {
+    float: none;
+    margin-top: 50px;
+  }
+
+  .Banner .section-left p {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .Banner .section-left h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .Banner .section-left h5 {
+    margin-top: 5px;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .skill {
+    margin-top: 200px;
+  }
+
+  nav li a i {
+    visibility: visible;
+    display: inline-block;
+    font-size: 35px;
+    margin-left: 10px;
+    position: absolute;
+    bottom: 55%;
+    right: 65%;
+  }
 }
