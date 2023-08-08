@@ -39,7 +39,7 @@ function Banner() {
           </h5>
           <h4>
             Hire Me{" "}
-            <a href="#Bottom">
+            <a href="mailto:SuperMariyaBros@gmail.com">
               <i class="fa-solid fa-arrow-right"></i>
             </a>
           </h4>

@@ -3,7 +3,7 @@ import Lottie from "lottie-react";
 import animationData from "../assets/Orange.json";
 import Typed from "typed.js";
 
-function Banner() {
+function Banner2() {
   const el = React.useRef(null);
 
   React.useEffect(() => {
@@ -49,4 +49,4 @@ function Banner() {
   );
 }
 
-export default Banner;
+export default Banner2;

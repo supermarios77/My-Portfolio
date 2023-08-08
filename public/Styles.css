@@ -142,12 +142,14 @@ nav li a i {
 .Banner .section-left h5 {
   margin-top: 10px;
   font-size: 25px;
+  font-family: 'Poppins';
 }
 
 .Banner .section-left h4 {
   margin-top: 20px;
   color: rgb(233, 228, 233);
   font-weight: 600;
+  font-family: 'Poppins';
 }
 
 .Banner .section-left h4 a i {
@@ -279,5 +281,51 @@ nav li a i {
   }
 }
 
-/* Projects */
+/* Project */
 
+.container {
+  padding: 20px 9%;
+  padding-bottom: 100px;
+}
+
+.container .heading {
+  text-align: center;
+  padding-bottom: 15px;
+  color: #ffffff; 
+  font-size: 50px; 
+}
+
+.container .box-container {
+  display: flex; 
+  gap: 15px;
+  justify-content: center; 
+  overflow-x: auto; 
+  padding: 10px 0; 
+  flex-wrap: wrap; 
+}
+
+.container .box-container .box {
+  flex: 0 0 auto; 
+}
+
+.container .box-container .box i {
+  background-color: #8e1d81a8; 
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 40px;
+  color: #ffffff; 
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.box h3 {
+  font-size: 20px;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .container .box-container {
+    overflow-x: unset; 
+    padding: 10px 0; 
+    justify-content: flex-start; 
+  }
+}

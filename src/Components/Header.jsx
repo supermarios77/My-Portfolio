@@ -13,10 +13,10 @@ function Header() {
               <a href="/">Home</a>
             </li>
             <li>
-              <a href="/">Projects</a>
+              <a href="#bottom">Projects</a>
             </li>
             <li>
-              <a href="/">Skills</a>
+              <a href="#middle">Skills</a>
             </li>
             <li>
               <a href="https://github.com/supermarios77">
@@ -26,7 +26,7 @@ function Header() {
           </ul>
         </nav>
         <button className="cta">
-          <a href="/">Hire Me</a>
+          <a href="mailto:supermariyabros@gmail.com">Hire Me</a>
         </button>
       </header>
     </div>
