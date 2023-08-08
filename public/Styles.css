@@ -129,15 +129,19 @@ nav li a i {
   margin-bottom: 20px;
   cursor: pointer;
   border: 0.9px solid white;
+  font-size: 20px;
 }
 
 .Banner .section-left h1 {
-  font-size: 50px;
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  font-family: 'Roboto';
 }
 
 .Banner .section-left h5 {
   margin-top: 10px;
-  font-size: 15px;
+  font-size: 25px;
 }
 
 .Banner .section-left h4 {
@@ -202,7 +206,7 @@ nav li a i {
 }
 
 .Highlight {
-  color: #eee5e5;
+  color: #c9c9c9;
 }
 
 /*  media query for smaller screens */
