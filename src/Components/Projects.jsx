@@ -1,25 +1,31 @@
 import React from 'react';
-import  Lottie from 'lottie-react';
-import list from "../assets/List.json";
-import Coins from "../assets/Coins.json";
+
 
 function Projects() {
   return (
-    <div className="Projects">
-      <div className="project-header">
+    <div className="project">
+    <div className="project-header">
         <h1>My Projects</h1>
       </div>
-       <div className="project">
+    <div className="Projects">
 
-        <Lottie className='icon' animationData={list} />  
-        <p><a href="https://todolist-gi5k.onrender.com/">To Do List Project</a></p>
-       </div>
+      <div className="project-card" id="d">
+        <h2>Todo <br /> List</h2>
+      </div>
 
-       <div className="project">
-        <Lottie className='icon' animationData={Coins} />  
-        <p><a href="/">Cryptick - Crypto Ticker Project</a></p>
-       </div>
+      <div className="project-card" id="a">
+        <h2>Cryptick</h2>
+      </div>
 
+      <div className="project-card" id="b">
+        <h2>Kitchen Buddy</h2>
+      </div>
+
+      <div className="project-card" id="c">
+        <h2>Resume Project</h2>
+      </div>
+
+    </div>
     </div>
   )
 }

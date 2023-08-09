@@ -5,7 +5,7 @@ html {
 
 body {
   margin: 0;
-  background: url(images/bgspace.jpg) no-repeat center center fixed;
+  background: url(images/mario.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -15,7 +15,7 @@ body {
   box-sizing: inherit;
   font-family: "Poppins";
   max-width: 100%;
-  height: 250vh;
+  height: 200vh;
 }
 
 * {
@@ -71,19 +71,19 @@ a {
 
 .cta:hover a {
   transition: 0.4s ease-in;
-  color: rgb(95, 43, 67);
+  color: rgb(0, 0, 0);
 }
 
 .cta:hover {
   transition: 0.4s ease-in;
-  border: 2px solid rgb(95, 43, 67);
-  background-color: rgb(27, 122, 146);
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgb(15, 63, 111);
 }
 
 nav li:hover a {
   transition: 0.4s ease-in;
   font-size: 21px;
-  color: rgb(207, 124, 10);
+  color: rgb(203, 127, 21);
 }
 
 nav li a i {
@@ -121,7 +121,7 @@ nav li a i {
 }
 
 .Banner .section-left p {
-  background: -webkit-linear-gradient(45deg, #a86f8d68, #9a218690, #1413349c);
+  background: -webkit-linear-gradient(45deg, #1ba5be68, #07508c90, #1656749c);
   padding: 10px;
   width: 300px;
   border-radius: 5px;
@@ -167,7 +167,7 @@ nav li a i {
   cursor: pointer;
 }
 .skill-bx {
-  background:  -webkit-linear-gradient(45deg, #a86f8d68, #9a218690, #1413349c);;
+  background:  -webkit-linear-gradient(45deg, #0e727668, #085b7990, #114e519c);;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
@@ -191,7 +191,7 @@ nav li a i {
   margin: 0 auto;
   position: relative;
 }
-.skill-slider .item img {
+.skill-slider .item .progress-bar {
   width: 50%;
   margin: 0 auto 15px auto;
 }
@@ -208,7 +208,7 @@ nav li a i {
 }
 
 .Highlight {
-  color: #c9c9c9;
+  color: #e1d7d6;
 }
 
 /*  media query for smaller screens */
@@ -279,6 +279,15 @@ nav li a i {
     bottom: 55%;
     right: 65%;
   }
+
+
+  .Projects {
+    grid-row: 3;
+  }
+
+  .project-card {
+    grid-row: 3;
+  }
 }
 
 /* Project */
@@ -290,35 +299,89 @@ nav li a i {
   align-content: center;
   margin-right: 15%;
   margin-left: 15%;
-  margin-top: 30px;
+  margin-top: 10px;
   padding: 20px;
+  grid-row: 1;
+  grid-gap: 50px;
 }
 
 .project-header h1 {
+  margin-top: 30px;
   color: white;
-  background: linear-gradient(45deg, #a86f8d68, #9a218690, #1413349c);
-  padding: 20px;
-  border-radius: 30px;
+  text-align: center;
   font-weight: 800;
-  border: 1px solid white;
 }
 
-
-.project  {
-  display: grid;
- align-items: center; 
- grid-template-columns: 1fr 1fr 1fr;
- column-gap: 5px;
- margin-bottom: 10px;
-  
+.project-card {
+  margin-top: 30px;
+  background-color: rgb(132, 50, 132);
+  padding: 10px;
+  width: 300px;
+  height: 300px;
+  grid-row: 1;
+  grid-row-gap: 30px;
 }
 
-.icon { 
-  max-width: 100%;
-  max-height:100%;
-}
-
-.project p a {
-  font-size: 40px;
+.project-card h2 {
+  margin-top: 35%;
+  text-align: center;
   color: white;
+}
+
+
+#a {
+  background-color: #C25F48;
+}
+
+#b {
+  background-color: #FDC16F;
+}
+
+#c {
+  background-color: #4AABA2;
+}
+
+#d {
+  background-color: rgb(132, 50, 132);
+}
+
+.project-card {
+  --c: #ffffff; /* the color */
+  --b: .1em;    /* border length*/
+  --d: 20px;    /* the cube depth */
+  
+  --_s: calc(var(--d) + var(--b));
+  
+  color: var(--c);
+  border: solid #0000;
+  border-width: var(--b) var(--b) var(--_s) var(--_s);
+  background:
+    conic-gradient(at left var(--d)  bottom var(--d),
+      #0000 90deg, rgb(255 255 255 /0.3) 0 225deg,rgb(255 255 255 /0.6) 0) border-box,
+    conic-gradient(at left var(--_s) bottom var(--_s),
+      #0000 90deg,var(--c) 0) 0 100%/calc(100% - var(--b)) calc(100% - var(--b))  border-box;
+  transform: translate(calc(var(--d)/-1),var(--d));
+  clip-path: 
+    polygon(
+     var(--d) 0%, 
+     var(--d) 0%, 
+     100% 0%, 
+     100% calc(100% - var(--d)),
+     100% calc(100% - var(--d)),
+     var(--d) calc(100% - var(--d))
+    );
+  transition: 0.5s;
+}
+
+.project-card:hover {
+  transform: translate(0,0);
+  clip-path: 
+    polygon(
+     0% var(--d), 
+     var(--d) 0%, 
+     100% 0%, 
+     100% calc(100% - var(--d)), 
+     calc(100% - var(--d)) 100%, 
+     0% 100%
+   );
 }
