@@ -1,29 +1,27 @@
-import React from "react";
+import React from 'react';
+import  Lottie from 'lottie-react';
+import list from "../assets/List.json";
+import Coins from "../assets/Coins.json";
 
 function Projects() {
   return (
-    <div class="container">
-      <h1 class="heading">My Projects</h1>
-
-      <div class="box-container">
-        <div class="box">
-          <a href="https://todolist-gi5k.onrender.com/">
-            <i class="fa-solid fa-clipboard-list"></i>
-          </a>
-          <h3>To Do List App</h3>
-        </div>
+    <div className="Projects">
+      <div className="project-header">
+        <h1>My Projects</h1>
       </div>
+       <div className="project">
 
-      <div className="box-container">
-        <div className="box">
-          <a href="https://rupaya-website.vercel.app/">
-            <i class="fa-solid fa-coins"></i>
-          </a>
-          <h3>Rupaya Website</h3>
-        </div>
-      </div>
+        <Lottie className='icon' animationData={list} />  
+        <p><a href="https://todolist-gi5k.onrender.com/">To Do List Project</a></p>
+       </div>
+
+       <div className="project">
+        <Lottie className='icon' animationData={Coins} />  
+        <p><a href="/">Cryptick - Crypto Ticker Project</a></p>
+       </div>
+
     </div>
-  );
+  )
 }
 
-export default Projects;
+export default Projects
