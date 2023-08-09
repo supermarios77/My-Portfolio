@@ -288,18 +288,19 @@ nav li a i {
   display: grid;
   justify-content: center;
   align-content: center;
-  background: linear-gradient(45deg, #a86f8d68, #9a218690, #1413349c);
   margin-right: 15%;
   margin-left: 15%;
   margin-top: 30px;
   padding: 20px;
-  border-radius: 40px;
-  border: 0.8px solid white;
 }
 
 .project-header h1 {
   color: white;
+  background: linear-gradient(45deg, #a86f8d68, #9a218690, #1413349c);
+  padding: 20px;
+  border-radius: 30px;
   font-weight: 800;
+  border: 1px solid white;
 }
 
 
