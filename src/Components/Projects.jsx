@@ -10,7 +10,7 @@ function Projects() {
     <div className="Projects">
 
       <div className="project-card" id="d">
-        <h2><a href="https://todolist-gi5k.onrender.com/">Todo <br /> List</a></h2>
+      <a href="https://todolist-gi5k.onrender.com/"><h2>Todo <br /> List</h2></a>
       </div>
 
       <div className="project-card" id="a">
