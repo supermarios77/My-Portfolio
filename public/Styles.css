@@ -328,6 +328,11 @@ nav li a i {
   color: white;
 }
 
+.project-card h2 a {
+  margin-top: 35%;
+  text-align: center;
+  color: white;
+}
 
 #a {
   background-color: #C25F48;
